@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-div{
+.content{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,25 +14,24 @@ div{
     height: 100vh;
 }
 
+
+h1{
+    font-size: 150px;
+} 
+
 h2{
-    font-size: 60px;
-    background: #eee;
-    padding: 8px 24px;
-    border-radius: 16px;
+    font-size: 30px;
 }
 
-div:nth-child(1){
+header{
     background-image: url(/img/hero.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
-div:nth-child(3){
-background-image: url(/img/topo.jpg);
-background-attachment: fixed;
-background-size:cover;
+.icon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div:nth-child(4){
-    background: 
-}

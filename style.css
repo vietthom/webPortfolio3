@@ -22,15 +22,12 @@
 .welcome h1{
     font-size: 150px;
 }
-.container{
-    width: 100%;
-    height: 100vh;
-}
 
 .contacts{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 75vh;
     background-color: #c1e1c1
@@ -98,6 +95,7 @@
 
 .projectSection{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(./img/fun.jpg);
@@ -111,9 +109,19 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
+.title{
+    margin-bottom: 100px;
+}
+.title h1{
+    font-size: 150px;
+    text-decoration: underline;
+}
 
-.sectionTitle{
+.aboutMe{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }

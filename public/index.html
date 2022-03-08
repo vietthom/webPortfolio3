@@ -36,16 +36,20 @@ rel="stylesheet"
 <section class="projectSection">  
     <div class="title"><h1>Projects</h1></div>   
     <article class="project-grid">
-            <div class="card">
+        
+        <div class="card">
+            <button type="button" data-mdb-toggle="modal" data-mdb-target="#pokeModal">
                 <img class="projectImage" src="./img/poke search.png" alt="Pokemon Search API Project">
                 <div class="overlay blur">
                     <div class="projectTitle">Poke Search</div>
                     <div class="projectDescription">
                         <p>Find your favorite Pokemon!</p>
                     </div>
-                </div>
-            </div>
-            <div class="card">
+                </div
+            ></button>
+        </div>     
+        <div class="card">
+            <button type="button" data-mdb-toggle="modal" data-mdb-target="#day-scheduler">
                 <img class="projectImage" src="./img/day scheduler.PNG" alt="Day Scheduler Project">
                 <div class="overlay blur">
                     <div class="projectTitle">Day Scheduler</div>
@@ -53,45 +57,152 @@ rel="stylesheet"
                         <p>Plan out your day for success!</p>
                     </div>
                 </div>
-            </div>
+            </button>
+        </div>
             <div class="card">
-                <img class="projectImage" src="./img/Employee tracker CMS.PNG" alt="CMS Employee Tracker">
-                <div class="overlay blur">
-                    <div class="projectTitle">Employee Tracker</div>
-                    <div class="projectDescription">
-                        <p>Manage your employees with this tracker!</p>
+                <button type="button" data-mdb-toggle="modal" data-mdb-target="#employeeTrackerModal">
+                    <img class="projectImage" src="./img/Employee tracker CMS.PNG" alt="CMS Employee Tracker">
+                    <div class="overlay blur">
+                        <div class="projectTitle">Employee Tracker</div>
+                        <div class="projectDescription">
+                            <p>Manage your employees with this tracker!</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             </div>
+            
             <div class="card">
-                <img class="projectImage" src="./img/note_taker.png" alt="Note Taker Project">
+                <button type="button" data-mdb-toggle="modal" data-mdb-target="#noteTakerModal">
+                    <img class="projectImage" src="./img/note_taker.png" alt="Note Taker Project">
                 <div class="overlay blur">
                     <div class="projectTitle">Note Taker</div>
                     <div class="projectDescription">
                         <p>Jot down your ideas with this note taker app!</p>
                     </div>
                 </div>
+                </button>
             </div>
+
             <div class="card">
-                <img class="projectImage" src="./img/password generator.png" alt="Password Generator Project">
-                <div class="overlay blur">
-                    <div class="projectTitle">Random Password Generator</div>
-                    <div class="projectDescription">
-                        <p>Need a new password? Try the generator!</p>
+                <button type="button" data-mdb-toggle="modal" data-mdb-target="#passwordGeneratorModal">
+                    <img class="projectImage" src="./img/password generator.png" alt="Password Generator Project">
+                    <div class="overlay blur">
+                        <div class="projectTitle">Random Password Generator</div>
+                        <div class="projectDescription">
+                            <p>Need a new password? Try the generator!</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             </div>
             <div class="card">
-                <img class="projectImage" src="./img/horiseon2.PNG" alt="Horiseon Project">
+                <button type="button" data-mdb-toggle="modal" data-mdb-target="#horiseonModal">
+                    <img class="projectImage" src="./img/horiseon2.PNG" alt="Horiseon Project">
                 <div class="overlay blur">
                     <div class="projectTitle">Horiseon</div>
                     <div class="projectDescription">
                         <p>SEO done right!</p>
                     </div>
                 </div>
+                </button>
             </div>
-        </article>
+        </article>      
 </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="pokeModal" tabindex="-1" aria-labelledby="pokeModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pokeModalTitle">Poke Search</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Brief Description</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"><a href="https://github.com/themouse14/PokeSearch" target="_blank">Github</a></button>
+          <button type="button" class="btn btn-primary"><a href="https://themouse14.github.io/PokeSearch/" target="_blank">Launched Application</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="day-scheduler" tabindex="-1" aria-labelledby="day-scheduler" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="daySchedulerModal">Day Scheduler</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Brief Description</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"><a href="https://github.com/thomle0418/day_scheduler" target="_blank">Github</a></button>
+          <button type="button" class="btn btn-primary"><a href="https://thomle0418.github.io/day_scheduler/" target="_blank">Launched Application</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="employeeTrackerModal" tabindex="-1" aria-labelledby="employee-tracker-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="emolyee-tracker-title">Employee Tracker</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Brief Description</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"><a href="https://github.com/thomle0418/Employee_Tracker_CMS" target="_blank">Github</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="noteTakerModal" tabindex="-1" aria-labelledby="note-taker-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="note-taker-modal">Note Taker</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">You will need to instal node packages to run this application. </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"><a href="https://github.com/thomle0418/Note_taker" target="_blank">Github</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="passwordGeneratorModal" tabindex="-1" aria-labelledby="password-generator-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="password-generator-title">Password Generator</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Brief Description</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"><a href="https://github.com/thomle0418/password_generator" target="_blank">Github</a></button>
+          <button type="button" class="btn btn-primary"><a href="https://thomle0418.github.io/password_generator/" target="_blank">Launched Application</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="horiseonModal" tabindex="-1" aria-labelledby="horiseon-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="horiseon-title">Horiseon</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Brief Description</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"><a href="https://github.com/thomle0418/horiseon_refractoring_ticket" target="_blank">Github</a></button>
+          <button type="button" class="btn btn-primary"><a href="https://thomle0418.github.io/horiseon_refractoring_ticket/" target="_blank">Launched Application</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 <div class="contacts">
     <div class="aboutSection">
@@ -137,7 +248,6 @@ rel="stylesheet"
         </form>
     </div>
 </div>
-
 
     <!-- MDB -->
 <script

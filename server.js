@@ -17,16 +17,22 @@ app.post('/', (req, res) => {
     console.log(req.body);
     
     const transporter = nodemailer.createTransport({
-        host: 'smtp-mail.gmail.com',
+        service:  'outlook',
         port: 587,
+        logger: true,
+        debug: true,
+        secure: false,
         auth: {
-            user: 'thomle0418@gmail.com', 
-            pass: 'Mino_1234*'
-        }
-    })
+            user: 'vietthom@outlook.com', 
+            pass: 'Mino_1234*', 
+        },
+        tls:{
+            rejectUnauthorized: true,
+        },
+    });
     const mailOptions = {
         from: req.body.email,
-        to: 'thomle0418@gmail.com', 
+        to: 'vietthom@outlook.com', 
         subject: `Message from ${req.body.email}: ${req.body.subject}`, 
         text: req.body.message
     }
@@ -39,7 +45,7 @@ app.post('/', (req, res) => {
             res.send('success');
         }
     })
-})
+});
 
 app.listen(PORT, ()=>{
     console.log(`Server running on port ${PORT}`)
